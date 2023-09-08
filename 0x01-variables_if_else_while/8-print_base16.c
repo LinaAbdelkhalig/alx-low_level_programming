@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	printf("0123456789abcdef");
+	printf("0123456789abcdef\n");
 
 	return (0);
 }
