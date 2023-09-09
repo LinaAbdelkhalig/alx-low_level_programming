@@ -11,7 +11,7 @@ int main(void)
 	{
 		putchar(i + '0');
 		putchar(',');
-		putchae(' ');
+		putchar(' ');
 	}
 
 	return (0);
