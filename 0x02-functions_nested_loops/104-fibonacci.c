@@ -1,5 +1,25 @@
 #include "main.h"
 #include <stdio.h>
+
+/**
+ * numLength - returns length of a string
+ * @num: operadn number
+ * Return: the number of digits
+ */
+
+int numLength(int num)
+{
+	int length = 0;
+	if (!num)
+		return (1);
+	while (num)
+	{
+		num = num / 10;
+		ength += 1;
+	}
+	return (length);
+}
+
 /**
  * main - this is the main funtion
  * Return: this will return 0
