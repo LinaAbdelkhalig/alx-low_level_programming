@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * 0-isupper.c - checkes wether the char is upper or lower
+ * _isupper - checkes wether the char is upper or lower
  * @c: the characcter to be tested
  * Return: 0 or 1
  */
