@@ -4,10 +4,11 @@
  * @size: the size of the triangle
  * Return: void
  */
+
 void print_triangle(int size)
 {
 	int hash, index;
-	
+
 	if (size > 0)
 	{
 		for (hash = 1; hash <= size; hash++)
@@ -20,8 +21,7 @@ void print_triangle(int size)
 
 			if (hash == size)
 				continue;
-			
-			_putchar('\n');	
+			_putchar('\n');
 		}
 	}
 
