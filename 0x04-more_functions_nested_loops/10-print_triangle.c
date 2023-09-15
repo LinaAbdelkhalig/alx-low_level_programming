@@ -12,15 +12,18 @@ void print_triangle(int size)
 	{
 		for (hash = 1; hash <= size; hash++)
 		{
-			for (index = size - hash; index > 0; index --)
+			for (index = size - hash; index > 0; index--)
 				_putchar(' ');
 
-			for (index = 0; index < hash; index ++)
+			for (index = 0; index < hash; index++)
 				_putchar('#');
 
 			if (hash == size)
 				continue;
+			
 			_putchar('\n');	
 		}
 	}
+
+	_putchar('\n');
 }
