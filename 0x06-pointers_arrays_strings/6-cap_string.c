@@ -21,7 +21,7 @@ int is_lower(char c)
 int is_seperator(char c)
 {
 	int i;
-	char seperator[] = "\t\n,.?!\"{}()";
+	char seperator[] = " \t\n;,.?!\"{}()";
 
 	for (i = 0; i < 12; i++)
 		if (c == seperator[i])
