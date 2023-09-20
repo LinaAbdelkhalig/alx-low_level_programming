@@ -9,8 +9,8 @@
 char *leet(char *str)
 {
 	char *pointer = str;
-	char keys[] = ('A', 'E', 'O', 'T', 'L');
-	char values[] = ('4', '3', '0', '7', '1');
+	char keys[] = {'A', 'E', 'O', 'T', 'L'};
+	char values[] = {'4', '3', '0', '7', '1'};
 	unsigned int i;
 
 	while (*str)
@@ -23,5 +23,5 @@ char *leet(char *str)
 		str++;
 	}
 
-	return (str);
+	return (pointer);
 }
