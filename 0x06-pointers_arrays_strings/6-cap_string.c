@@ -28,9 +28,9 @@ int is_seperator(char c)
 
 }
 
-char *cap_string(char *string)
+char *cap_string(char *s)
 {
-	char *pointer;
+	char *pointer = s;
 	int found_sep = 1;
 
 	while (*s)
