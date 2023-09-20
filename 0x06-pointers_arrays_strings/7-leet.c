@@ -12,16 +12,16 @@ char *leet(char *str)
 
 	while (*pointer != '\0')
 	{
-		if (*ptr == 'a' || *ptr == 'A')
-			*ptr = '4';
-		else if (*ptr == 'e' || *ptr == 'E')
-			*ptr = '3';
-		else if (*ptr == 'o' || *ptr == 'O')
-			*ptr = '0';
-		else if (*ptr == 't' || *ptr == 'T')
-			*ptr = '7';
-		else if (*ptr == 'l' || *ptr == 'L')
-			*ptr = '1';
+		if (*pointer == 'a' || *pointer == 'A')
+			*pointer = '4';
+		else if (*pointer == 'e' || *pointer == 'E')
+			*pointer = '3';
+		else if (*pointer == 'o' || *pointer == 'O')
+			*pointer = '0';
+		else if (*pointer == 't' || *pointer == 'T')
+			*pointer = '7';
+		else if (*pointer == 'l' || *pointer == 'L')
+			*pointer = '1';
 
 		pointer++;
 	}
