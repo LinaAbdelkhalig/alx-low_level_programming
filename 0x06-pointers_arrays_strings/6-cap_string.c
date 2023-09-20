@@ -1,19 +1,22 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * is_lower - checks if the char is lowercase
  * @c: the char to be checked
- * is_seperator - checks if the current character is a seperator
- * @c: the char to be checked
- * cap_string - capitalizes thw words in atring
- * @string: the string to be capitalized
- * Return: a pointer to the capitalized string
+ * Return: 1 or 0
  */
 
 int is_lower(char c)
 {
 	return (c <= 122 && c >= 97);
 }
+
+/**
+ * is_seperator - checks if the char is a seperator
+ * @c: the character to be checked
+ * Return: 0
+ */
 
 int is_seperator(char c)
 {
@@ -27,6 +30,12 @@ int is_seperator(char c)
 	return (0);
 
 }
+
+/**
+ * cap_string - capitalizes the words in a string
+ * @s: the string to be capitalized
+ * Return: pointer to a string
+ */
 
 char *cap_string(char *s)
 {
