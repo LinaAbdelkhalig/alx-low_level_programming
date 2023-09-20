@@ -9,21 +9,18 @@
 char *leet(char *str)
 {
 	char *pointer = str;
+	char keys[] = ('A', 'E', 'O', 'T', 'L');
+	char values[] = ('4', '3', '0', '7', '1');
+	unsigned int i;
 
-	while (*pointer != '\0')
+	while (*str)
 	{
-		if (*pointer == 'a' || *pointer == 'A')
-			*pointer = '4';
-		else if (*pointer == 'e' || *pointer == 'E')
-			*pointer = '3';
-		else if (*pointer == 'o' || *pointer == 'O')
-			*pointer = '0';
-		else if (*pointer == 't' || *pointer == 'T')
-			*pointer = '7';
-		else if (*pointer == 'l' || *pointer == 'L')
-			*pointer = '1';
-
-		pointer++;
+		for (i = 0; i < sizeof(keys); i++)
+		{
+			if (*str == keys[i] || *str == keys[i] + 32)
+				*str = 48 + values[i];
+		}
+		str++;
 	}
 
 	return (str);
