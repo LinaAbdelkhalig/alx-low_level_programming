@@ -43,7 +43,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (co == 1)
 	{
 		r[larger + 1] = '\0';
-		if (r[larger + 2] > size_r)
+		if (larger + 2 > size_r)
 			return (0);
 
 		while (larger-- >= 0)
