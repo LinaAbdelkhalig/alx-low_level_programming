@@ -9,11 +9,13 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j = 0;
+	int i = 0, j;
 	char *point;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i] != '\0')
 	{
+		j = 0;
+
 		while (accept[j] != '\0')
 		{
 			if (s[i] == accept[j])
@@ -23,6 +25,7 @@ char *_strpbrk(char *s, char *accept)
 			}
 			j++;
 		}
+		i++;
 	}
 	return (0);
 }
