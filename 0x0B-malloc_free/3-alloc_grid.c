@@ -23,11 +23,11 @@ int **alloc_grid(int width, int height)
 		if (a[r] == 0)
 		{
 			while (r--)
-				free(a[i]);
+				free(a[r]);
 			free(a);
 			return (NULL);
 		}
-		for (c = 0; c < width; j++)
+		for (c = 0; c < width; c++)
 			a[r][c] = 0;
 	}
 	return (a);
