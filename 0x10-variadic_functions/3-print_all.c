@@ -44,7 +44,19 @@ void print_all(const char * const format, ...)
 					}
 				}
 				break;
+			case '\n':
+				{
+					printf("\n");
+					continue;
+				}
+			case '\t':
+				{
+					printf("\t");
+					continue;
+				}
 		}
+		printf("%s",  a);
+		a++;
 	}
 	va_end(list);
 	printf("\n");
