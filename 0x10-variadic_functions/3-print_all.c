@@ -32,9 +32,9 @@ void print_all(const char * const format, ...)
 					printf("%s%f", s, va_arg(list, double));
 					break;
 				case 's':
-					printf("%s%s", s, va_arg(list, char *));
+					a = va_arg(list, char *);
 					if (!a)
-						a = "(ni)";
+						a = "(nil)";
 					printf("%s%s", s, a);
 					break;
 
@@ -42,7 +42,7 @@ void print_all(const char * const format, ...)
 					i++;
 					continue;
 			}
-			s = ",";
+			s = ", ";
 			i++;
 		}
 	}
