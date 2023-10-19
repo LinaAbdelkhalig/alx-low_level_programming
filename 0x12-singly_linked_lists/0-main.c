@@ -22,7 +22,7 @@ int main(void)
         printf("Error\n");
         return (1);
     }
-    new->str = strdup("Hello");
+    new->str = strdup("nope");
     new->len = 5;
     new->next = head;
     head = new;
