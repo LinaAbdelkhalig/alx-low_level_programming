@@ -6,9 +6,9 @@
  * Return: the result of b ^ p int
  */
 
-int power(int b, int p)
+unsigned int power(int b, unsigned int p)
 {
-	int res = 1, i;
+	unsigned int res = 1, i;
 
 	for (i = 0; i < p; i++)
 	{
@@ -25,8 +25,8 @@ int power(int b, int p)
 
 unsigned int binary_to_uint(const char *b)
 {
-	int binlen, pow = 0;
-	unsigned int unint = 0;
+	unsigned int pow = 0;
+	int unint = 0, binlen;
 
 	if (!b)
 		return (0);
@@ -35,9 +35,9 @@ unsigned int binary_to_uint(const char *b)
 		if (b[binlen] != '0' && b[binlen] != '1')
 			return (0);
 	}
-	for (binlen-- ; binlen >= 0; binlen--)
+	for (binlen--; binlen >= 0; binlen--)
 	{
-		unint += (b[binlen] - '0') * (unsigned int)power(2, pow);
+		unint += (b[binlen] - '0') * power(2, pow);
 		pow++;
 	}
 	return (unint);
