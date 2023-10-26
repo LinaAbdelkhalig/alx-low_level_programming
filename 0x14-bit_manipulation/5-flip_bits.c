@@ -3,7 +3,7 @@
 /**
  * flip_bits - returns the number of bits you would need to flip..
  * @n: the number to flip
- * @m: the number that is floppen to 
+ * @m: the number that is floppen to
  * Return: the number of bits needed
  */
 
@@ -18,5 +18,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		xor >>= 1;
 	}
 
-	return count;
+	return (count);
 }
