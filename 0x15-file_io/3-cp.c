@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 	to_fc = close(to_fc);
 	if (frm_fc)
 		dprintf(STDERR_FILENO, NOCLS, frm_fc), exit(100);
-	if(to_fc)
+	if (to_fc)
 		dprintf(STDERR_FILENO, NOCLS, frm_fc), exit(100);
 	return (EXIT_SUCCESS);
 }
