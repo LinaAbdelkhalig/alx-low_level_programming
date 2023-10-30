@@ -37,5 +37,5 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (length)
 		size = write(fa, text_content, length);
 	close(fa);
-	return (size = length ? 1 : -1);
+	return (size == length ? 1 : -1);
 }
