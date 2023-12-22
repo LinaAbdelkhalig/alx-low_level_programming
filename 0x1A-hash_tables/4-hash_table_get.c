@@ -19,7 +19,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	while (current)
 	{
 		if (strcmp(current->key, key) == 0)
-			reutrn (current->value);
+			return (current->value);
 		current = current->next;
 	}
 	return (NULL);
