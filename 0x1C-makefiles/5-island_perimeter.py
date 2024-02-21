@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """defines an island perimeter measuring function"""
 
+
 def island_perimeter(grid):
     """return the perimeter of an island
     water = 0, land = 1
