@@ -1,0 +1,7 @@
+# Usage:
+# make  # make a school file
+
+all: school
+
+school:
+    gcc main.c school.c
