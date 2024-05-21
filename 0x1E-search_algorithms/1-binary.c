@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "searc_algos.h"
+#include "search_algos.h"
 
 /**
  * print_array - prints an array of ints
